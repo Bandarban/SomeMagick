@@ -1,4 +1,4 @@
-package lab_1;
+package lab1;
 
 /**
  * Created by Bandar on 14.02.2018.

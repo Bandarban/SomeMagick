@@ -6,8 +6,8 @@ public class Q2 {
         for (int i = 0; i < array.length; i++) {
             array[i] = (i * 2) + 1;
         }
-        for (int j = 0; j < array.length; j++) {
-            System.out.print(array[j] + " ");
+        for (int anArray : array) {
+            System.out.print(anArray + " ");
         }
         System.out.println();
         for (int j = array.length - 1; j >= 0; j--) {

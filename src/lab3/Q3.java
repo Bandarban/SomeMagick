@@ -7,14 +7,15 @@ public class Q3 {
         for (int i = 0; i < arr.length; i++) {
             arr[i] = (int) (Math.random() * 10);
         }
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " ");
+        for (int anArr : arr) {
+            System.out.print(anArr + " ");
         }
         int counter = 0;
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] % 2 != 1) counter++;
+        for (int anArr : arr) {
+            if (anArr % 2 != 1) counter++;
         }
         System.out.println("\n" + counter);
 
     }
 }
+

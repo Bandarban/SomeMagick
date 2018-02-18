@@ -6,7 +6,7 @@ import java.util.Scanner;
  * Created by Bandar on 16.02.2018.
  */
 public class Q4 {
-    public static int min(int a, int b) {
+    public static int min2(int a, int b) {
         return (a < b ? a : b);
     }
 
@@ -23,7 +23,7 @@ public class Q4 {
         } catch (Exception t) {
             System.out.println("Некорректный ввод");
         } finally {
-            System.out.println(min(m, n));
+            System.out.println(min2(m, n));
         }
 
     }

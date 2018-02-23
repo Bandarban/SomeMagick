@@ -3,7 +3,10 @@ package lab4;
 import static lab2.Q4.min2;
 
 public class Q1 {
-    public static int randrange(int a, int b) {
+    /**
+     * Рандомная генерация целого числа в диапазоне от меньшего до большего включительно
+     */
+    public static int randRange(int a, int b) {
         return (int) (min2(a, b) + (Math.random() * Math.abs(b + 1 - a)));
     }
 
@@ -13,7 +16,7 @@ public class Q1 {
         System.out.println("a= " + a + ", b= " + b);
         int[] arr = new int[20];
         for (int num : arr) {
-            num = randrange(a, b);
+            num = randRange(a, b);
             System.out.print(num + " ");
         }
 

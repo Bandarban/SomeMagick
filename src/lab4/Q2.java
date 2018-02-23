@@ -1,6 +1,6 @@
 package lab4;
 
-import static lab4.Q1.randrange;
+import static lab4.Q1.randRange;
 
 public class Q2 {
     public static void arrayPrint(int[] arr) {
@@ -20,7 +20,7 @@ public class Q2 {
         }
         for (int i = 0; i < mainArr.length; i++) {
             for (int j = 0; j < mainArr[0].length; j++) {
-                mainArr[i][j] = randrange(a, b);
+                mainArr[i][j] = randRange(a, b);
             }
         }
         for (int[] str : mainArr

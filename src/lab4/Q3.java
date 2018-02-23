@@ -1,6 +1,6 @@
 package lab4;
 
-import static lab4.Q1.randrange;
+import static lab4.Q1.randRange;
 import static lab4.Q2.arrayPrint;
 
 public class Q3 {
@@ -24,7 +24,7 @@ public class Q3 {
         System.out.println("a= " + a + ", b= " + b);
         int[] arr = new int[10];
         for (int i = 0; i < arr.length; i++) {
-            arr[i] = randrange(a, b);
+            arr[i] = randRange(a, b);
         }
         System.out.println("Массив до сортировки: ");
         arrayPrint(arr);

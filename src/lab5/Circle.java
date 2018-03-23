@@ -58,7 +58,7 @@ public class Circle {
     public static boolean oneTouch(Circle circle1, Circle circle2) {
         if (Circle.distanceBetweenCenters(circle1, circle2) == circle1.r + circle2.r) return true;
         if (Circle.distanceBetweenCenters(circle1, circle2) == Math.abs(circle1.r - circle2.r)) return true;
-        return false;
+        else return false;
     }
 
 }

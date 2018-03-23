@@ -5,7 +5,7 @@ import java.util.Scanner;
 import static lab4.Q1.randRange;
 
 public class Circle {
-    private double x, y, r;
+    public double x, y, r;
 
 
     public void printCircle() {
@@ -30,7 +30,7 @@ public class Circle {
         r = sc.nextDouble();
     }
 
-    Circle(double x, double y, double r) {
+    public Circle(double x, double y, double r) {
         this.x = x;
         this.y = y;
         this.r = r;

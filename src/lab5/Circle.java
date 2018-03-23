@@ -1,7 +1,5 @@
 package lab5;
 
-import lab4.Q1;
-
 import java.util.Scanner;
 
 import static lab4.Q1.randRange;
@@ -11,7 +9,7 @@ public class Circle {
 
 
     public void printCircle() {
-        System.out.println("Окружность с центром (" + x + ";" + y + ") и радиусом " + r);
+        System.out.println("Окружность с центром (" + x + "; " + y + ") и радиусом " + r);
     }
 
     public void zoomCircle(double k) {
@@ -32,10 +30,10 @@ public class Circle {
         r = sc.nextDouble();
     }
 
-    public Circle(double a, double b, double s) {
-        x = a;
-        y = b;
-        r = s;
+    public Circle(double x, double y, double r) {
+        this.x = x;
+        this.y = y;
+        this.r = r;
     }
 
     //Q1
@@ -50,6 +48,18 @@ public class Circle {
 
     }
 
+    //Q4
+    public static float distanceBetweenCenters(Circle circle1, Circle circle2) {
+        return (float) Math.sqrt(Math.pow(Math.abs(circle1.x - circle2.x), 2) + Math.pow(Math.abs(circle1.y - circle2.y), 2));
+
+    }
+
+    //Q5
+    public static boolean oneTouch(Circle circle1, Circle circle2) {
+        if (Circle.distanceBetweenCenters(circle1, circle2) == circle1.r + circle2.r) return true;
+        if (Circle.distanceBetweenCenters(circle1, circle2) == Math.abs(circle1.r - circle2.r)) return true;
+        return false;
+    }
 
 }
 

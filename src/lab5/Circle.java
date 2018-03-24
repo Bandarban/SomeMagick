@@ -41,7 +41,7 @@ public class Circle {
         System.out.println("Длина окружности: " + (2 * Math.PI * r));
     }
 
-    //Q2
+    //lab6.Q1.Q2
     public void randomPlace() {
         x = randRange(-99, 99);
         y = randRange(-99, 99);
